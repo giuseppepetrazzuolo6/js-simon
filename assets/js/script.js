@@ -66,10 +66,15 @@ setTimeout(() => {
         //creo un array vuoto in cui andro ad inserire i numeri indovinati dall'utente
         const correctNumbers = []
         //ora creo un ciclo for che scorre i numeri inseriti dall'utente
-        //verifica se sono presenti nell'array dei random number
-        //li inserisce nei correct numbers
+        for (let i = 0; i < userNumbers.length; i++) {
+            const num = userNumbers[i];
+            //verifica se sono presenti nell'array dei random number
+            if (originalNumbers.includes(num) && !correctNumbers.includes(num)) {
+                //li inserisce nei correct numbers
+                correctNumbers.push(num)
+            }
+        }
     })
-
 
 }, 3000)
 //verifico se i numeri inseriti dall'utente sono corretti 
