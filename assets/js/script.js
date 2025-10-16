@@ -7,3 +7,5 @@ l'utente deve inserire i numeri che ha visto precedentemente, nell'ordine che pr
 Dopo che sono stati inseriti i 5 numeri, 
 il software dice quanti e quali dei numeri da indovinare sono stati individuati.
 */
+
+console.log('its work');
