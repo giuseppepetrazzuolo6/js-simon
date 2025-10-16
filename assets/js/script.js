@@ -38,6 +38,12 @@ setTimeout(() => {
     numberFourEl.innerHTML = '<input type="number" id="input-four">';
     numberFiveEl.innerHTML = '<input type="number" id="input-five">';
 
+    //aggiungo il bottone
+    const button = document.createElement('button')
+    button.textContent = 'Verifica'
+    document.body.appendChild(button)
+
+
 }, 3000)
 //verifico se i numeri inseriti dall'utente sono corretti 
 
