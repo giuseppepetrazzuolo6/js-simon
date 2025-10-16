@@ -18,6 +18,18 @@ const numberFourEl = document.getElementById('number-four');
 const numberFiveEl = document.getElementById('number-five');
 console.log(numberOneEl, numberTwoEl, numberThreeEl, numberFourEl, numberFiveEl);
 
+//creo una funzione che mi genera dei numeri random
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+//assegno la funzione ai miei elementi html
+numberOneEl.innerHTML = getRndInteger(10, 100)
+numberTwoEl.innerHTML = getRndInteger(10, 100)
+numberThreeEl.innerHTML = getRndInteger(10, 100)
+numberFourEl.innerHTML = getRndInteger(10, 100)
+numberFiveEl.innerHTML = getRndInteger(10, 100)
+
 //creo una funzione asincrona che sostituisce i numeri con degli input
 //verifico se i numeri inseriti dall'utente sono corretti 
 
