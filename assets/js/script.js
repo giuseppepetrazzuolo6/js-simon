@@ -31,5 +31,13 @@ numberFourEl.innerHTML = getRndInteger(10, 100)
 numberFiveEl.innerHTML = getRndInteger(10, 100)
 
 //creo una funzione asincrona che sostituisce i numeri con degli input
+setTimeout(() => {
+    numberOneEl.innerHTML = '<input type="number" id="input-one">';
+    numberTwoEl.innerHTML = '<input type="number" id="input-two">';
+    numberThreeEl.innerHTML = '<input type="number" id="input-three">';
+    numberFourEl.innerHTML = '<input type="number" id="input-four">';
+    numberFiveEl.innerHTML = '<input type="number" id="input-five">';
+
+}, 3000)
 //verifico se i numeri inseriti dall'utente sono corretti 
 
