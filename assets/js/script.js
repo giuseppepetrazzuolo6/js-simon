@@ -10,7 +10,14 @@ il software dice quanti e quali dei numeri da indovinare sono stati individuati.
 
 console.log('its work');
 
-//dichiaro le variabili per gli elementi html
+//dichiaro le variabili per glie elementi html
+const numberOneEl = document.getElementById('number-one');
+const numberTwoEl = document.getElementById('number-two');
+const numberThreeEl = document.getElementById('number-three');
+const numberFourEl = document.getElementById('number-four');
+const numberFiveEl = document.getElementById('number-five');
+console.log(numberOneEl, numberTwoEl, numberThreeEl, numberFourEl, numberFiveEl);
+
 //creo una funzione asincrona che sostituisce i numeri con degli input
 //verifico se i numeri inseriti dall'utente sono corretti 
 
