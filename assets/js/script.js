@@ -57,7 +57,12 @@ setTimeout(() => {
         const inputThree = parseInt(document.getElementById('input-three').value);
         const inputFour = parseInt(document.getElementById('input-four').value);
         const inputFive = parseInt(document.getElementById('input-five').value);
-
+        //creo due array con gli input e i numeri random:
+        //array input
+        const userNumbers = [inputOne, inputTwo, inputThree, inputFour, inputFive];
+        //array numeri random
+        const originalNumbers = [numberOne, numberTwo, numberThree, numberFour, numberFive];
+        //gli array mi serviranno per la verifica dei numeri indovinati
 
     })
 
