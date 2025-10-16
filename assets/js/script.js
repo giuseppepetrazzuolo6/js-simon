@@ -68,14 +68,16 @@ setTimeout(() => {
         //ora creo un ciclo for che scorre i numeri inseriti dall'utente
         for (let i = 0; i < userNumbers.length; i++) {
             const num = userNumbers[i];
-            //verifica se sono presenti nell'array dei random number
+            //verifica se sono presenti nell'array dei random number, se presenti non li inserisce due volte
             if (originalNumbers.includes(num) && !correctNumbers.includes(num)) {
                 //li inserisce nei correct numbers
                 correctNumbers.push(num)
             }
         }
+        //alert per l'utente per mostrargli il risultato
+        alert(`Hai indovinato ${correctNumbers.length} numero/i: ${correctNumbers.join(', ')}`);
     })
 
-}, 3000)
+}, 30000)
 //verifico se i numeri inseriti dall'utente sono corretti 
 
