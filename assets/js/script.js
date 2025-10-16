@@ -23,12 +23,19 @@ function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
 }
 
-//assegno la funzione ai miei elementi html
-numberOneEl.innerHTML = getRndInteger(10, 100)
-numberTwoEl.innerHTML = getRndInteger(10, 100)
-numberThreeEl.innerHTML = getRndInteger(10, 100)
-numberFourEl.innerHTML = getRndInteger(10, 100)
-numberFiveEl.innerHTML = getRndInteger(10, 100)
+//creo delle variabili a cui assegnare la mia funzione getRndInteger
+const numberOne = getRndInteger(10, 100)
+const numberTwo = getRndInteger(10, 100)
+const numberThree = getRndInteger(10, 100)
+const numberFour = getRndInteger(10, 100)
+const numberFive = getRndInteger(10, 100)
+
+//assegno le varibili con il numero random ai miei elementi html
+numberOneEl.innerHTML = numberOne
+numberTwoEl.innerHTML = numberTwo
+numberThreeEl.innerHTML = numberThree
+numberFourEl.innerHTML = numberFour
+numberFiveEl.innerHTML = numberFive
 
 //creo una funzione asincrona che sostituisce i numeri con degli input
 setTimeout(() => {
@@ -42,6 +49,17 @@ setTimeout(() => {
     const button = document.createElement('button')
     button.textContent = 'Verifica'
     document.body.appendChild(button)
+
+    //aggiungo un evento al bottone
+    button.addEventListener('click', () => {
+        const inputOne = parseInt(document.getElementById('input-one').value);
+        const inputTwo = parseInt(document.getElementById('input-two').value);
+        const inputThree = parseInt(document.getElementById('input-three').value);
+        const inputFour = parseInt(document.getElementById('input-four').value);
+        const inputFive = parseInt(document.getElementById('input-five').value);
+
+
+    })
 
 
 }, 3000)
