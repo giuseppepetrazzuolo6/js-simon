@@ -9,3 +9,8 @@ il software dice quanti e quali dei numeri da indovinare sono stati individuati.
 */
 
 console.log('its work');
+
+//dichiaro le variabili per gli elementi html
+//creo una funzione asincrona che sostituisce i numeri con degli input
+//verifico se i numeri inseriti dall'utente sono corretti 
+
